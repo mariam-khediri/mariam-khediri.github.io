@@ -158,7 +158,7 @@
   position: relative;
 }
 
-/* Style pour les tooltips */
+/* ====Style pour les tooltips ===*/
 .tooltip::after {
   content: attr(data-tooltip);
   position: absolute;
