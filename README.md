@@ -4,7 +4,7 @@ Welcome to the official repository of my personal portfolio website — a dynami
 
 ## 🌐 Live Preview
 
-Check out the live site here: [your-website-link](https://your-website-link)
+Check out the live site here: [link](https://mariam-khediri.github.io/Html/home.html)
 
 ---
 
