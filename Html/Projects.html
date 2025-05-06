@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Mariem Khedhiri</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/Pages.css">
+  <link rel="stylesheet" href="../CSS/Projects.css">
+  <link rel="icon" href="../img/ME.png" type="image/x-icon">
+  <style>
+    /* Ajout spécifique pour le header des projets */
+    .projects-header h1 {
+      color: white !important;
+      background: none !important;
+      -webkit-text-fill-color: white !important;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Portfolio <span>.O</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist" id="navlist">
+      <li><a href="../Html/home.html">Home</a></li>
+      <li><a href="../Html/About.html">About</a></li>
+      <li><a href="../Html/Internships.html">Internships</a></li>
+      <li><a href="../Html/Skills.html">Skills</a></li>
+      <li><a href="../Html/Projects.html" class="active-nav">Projects</a></li>
+      <li><a href="../Html/Social_Life.html">Social Life</a></li>
+      <li><a href="../Html/Interests.html">Interests</a></li>
+    </ul>
+  </header>
+  <br>
+  <section class="projects-section">
+    <div class="projects-header">
+      <h1>My Projects</h1>
+    </div>
+  
+    <div class="projects-grid">
+      <!-- Pricing Regression Model -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>SQL Pricing Forecast</h3>
+          <p>End-to-end project predicting total invoice amounts using regression models, built from raw SQL data and visualized in Power BI.</p>
+          <div class="project-tech">
+            <span>SQL</span>
+            <span>Python</span>
+            <span>Power BI</span>
+            <span>Regression</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Epileptic Seizure Classification -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>EEG Seizure Classification</h3>
+          <p>Graduation project focused on classifying seizure types from EEG data with optimized channel selection using XGBoost.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>MATLAB</span>
+            <span>MNE</span>
+            <span>XGBoost</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- OCR Pipeline with RVL-CDIP -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Document OCR Pipeline</h3>
+          <p>Mini version of PixOCR built using the RVL-CDIP dataset with full preprocessing, OCR, and post-processing stages.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Tesseract OCR</span>
+            <span>RVL-CDIP</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Netflix Data Dashboard -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Netflix Insights Dashboard</h3>
+          <p>Interactive dashboard exploring Netflix content trends by genre, country, and year using Power BI.</p>
+          <div class="project-tech">
+            <span>Power BI</span>
+            <span>Power Query</span>
+            <span>Data Cleaning</span>
+          </div>
+        </div>
+      </div>
+      <!-- E-Commerce Analytics -->
+    <div class="project-card">
+      <div class="project-content">
+        <h3>E-Commerce Sales Analysis</h3>
+        <p>Performed customer segmentation and sales trend analysis to guide marketing strategies using SQL and Python.</p>
+        <div class="project-tech">
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Seaborn</span>
+          <span>Clustering</span>
+        </div>
+      </div>
+    </div>
+    <!-- Customer Churn Analysis -->
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Customer Churn Analysis</h3>
+        <p>Exploratory data analysis and predictive modeling to identify customer churn patterns and retention strategies.</p>
+        <div class="project-tech">
+          <span>Pandas</span>
+          <span>Seaborn</span>
+          <span>Scikit-learn</span>
+          <span>Logistic Regression</span>
+        </div>
+      </div>
+    </div>
+  
+      <!-- Time Series Forecasting -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Time Series Forecasting</h3>
+          <p>Forecasted future product demand using time series analysis and ARIMA models on historical sales data.</p>
+          <div class="project-tech">
+            <span>Pandas</span>
+            <span>Statsmodels</span>
+            <span>ARIMA</span>
+            <span>Visualization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuIcon = document.getElementById('menu-icon');
+      const navList = document.getElementById('navlist');
+    
+      if (menuIcon && navList) {
+        menuIcon.addEventListener('click', function() {
+          this.classList.toggle('bx-x');
+          navList.classList.toggle('active');
+          document.body.classList.toggle('no-scroll');
+        });
+    
+        // Close menu when a link is clicked
+        document.querySelectorAll('.navlist a').forEach(link => {
+          link.addEventListener('click', function() {
+            menuIcon.classList.remove('bx-x');
+            navList.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+          });
+        });
+      }
+    });
+
+    // Prevent right-click
+    document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+    });
+
+    // Block F12, Ctrl+Shift+I, Ctrl+U, etc.
+    document.addEventListener('keydown', (e) => {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+        (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+        (e.ctrlKey && e.key === 'U')
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!-- Quizz.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISC Quiz</title>
+  <link rel="stylesheet" href="../CSS/Quizz.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Portfoli <span>.O</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist">
+      <li><a href="../Html/home.html">Home</a></li>
+      <li><a href="../Html/About.html">About</a></li>
+      <li><a href="../Html/Projects.html">Projects</a></li>
+      <li><a href="../Html/Internships.html">Internships</a></li>
+      <li><a href="../Html/Skills.html">Skills</a></li>
+      <li><a href="../Html/Social_Life.html">Social Life</a></li>
+      <li><a href="../Html/Interests.html">Interests</a></li>
+      <li><a href="../Html/Contact.html">Contact</a></li>
+    </ul>
+    
+  </header>
+
+  <main>
+    <div id="quiz-content">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. You prefer:</p>
+        <label><input type="radio" name="q1" value="D"> Making quick decisions</label><br>
+        <label><input type="radio" name="q1" value="I"> Working in a team</label><br>
+        <label><input type="radio" name="q1" value="S"> Following a structured plan</label><br>
+        <label><input type="radio" name="q1" value="C"> Analyzing details before deciding</label>
+      </div>
+  
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. When facing a challenge:</p>
+        <label><input type="radio" name="q2" value="D"> You look for an immediate solution</label><br>
+        <label><input type="radio" name="q2" value="I"> You discuss ideas with others</label><br>
+        <label><input type="radio" name="q2" value="S"> You take time to reflect</label><br>
+        <label><input type="radio" name="q2" value="C"> You analyze the facts before acting</label>
+      </div>
+  
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. In a team, you are:</p>
+        <label><input type="radio" name="q3" value="D"> The leader who guides</label><br>
+        <label><input type="radio" name="q3" value="I"> The enthusiastic motivator</label><br>
+        <label><input type="radio" name="q3" value="S"> The reliable supporter</label><br>
+        <label><input type="radio" name="q3" value="C"> The technical expert</label>
+      </div>
+  
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. You are motivated by:</p>
+        <label><input type="radio" name="q4" value="C"> Precision</label><br>
+        <label><input type="radio" name="q4" value="I"> Social interactions</label><br>
+        <label><input type="radio" name="q4" value="S"> Stability</label><br>
+        <label><input type="radio" name="q4" value="D"> Results</label>
+      </div>
+  
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. When learning:</p>
+        <label><input type="radio" name="q5" value="I"> You enjoy discussing and sharing ideas</label><br>
+        <label><input type="radio" name="q5" value="S"> You take time to absorb information</label><br>
+        <label><input type="radio" name="q5" value="D"> You prefer immediate action</label><br>
+        <label><input type="radio" name="q5" value="C"> You deeply analyze the details</label>
+      </div>
+  
+      <!-- Question 6 -->
+      <div class="question">
+        <p>6. Under stress:</p>
+        <label><input type="radio" name="q6" value="I"> You seek support from others</label><br>
+        <label><input type="radio" name="q6" value="D"> You become direct</label><br>
+        <label><input type="radio" name="q6" value="C"> You focus on details</label><br>
+        <label><input type="radio" name="q6" value="S"> You focus on stability</label>
+      </div>
+  
+      <!-- Question 7 -->
+      <div class="question">
+        <p>7. Your approach to change:</p>
+        <label><input type="radio" name="q7" value="C"> You analyze its implications</label><br>
+        <label><input type="radio" name="q7" value="D"> You welcome it with enthusiasm</label><br>
+        <label><input type="radio" name="q7" value="I"> You enthusiastically discuss it</label><br>
+        <label><input type="radio" name="q7" value="S"> You are cautious but adaptable</label>
+      </div>
+  
+      <!-- Question 8 -->
+      <div class="question">
+        <p>8. Your communication style:</p>
+        <label><input type="radio" name="q8" value="D"> Direct and result-oriented</label><br>
+        <label><input type="radio" name="q8" value="C"> Clear and detailed</label><br>
+        <label><input type="radio" name="q8" value="S"> Calm and reassuring</label><br>
+        <label><input type="radio" name="q8" value="I"> Enthusiastic and persuasive</label>
+      </div>
+      
+  
+      <!-- Question 9 -->
+      <div class="question">
+        <p>9. When working on a project:</p>
+        <label><input type="radio" name="q9" value="D"> You focus on goals</label><br>
+        <label><input type="radio" name="q9" value="I"> You motivate the team</label><br>
+        <label><input type="radio" name="q9" value="S"> You ensure everything stays organized</label><br>
+        <label><input type="radio" name="q9" value="C"> You review the technical details</label>
+      </div>
+  
+      <!-- Question 10 -->
+      <div class="question">
+        <p>10. What satisfies you the most:</p>
+        <label><input type="radio" name="q10" value="D"> Achieving ambitious goals</label><br>
+        <label><input type="radio" name="q10" value="I"> Building positive relationships</label><br>
+        <label><input type="radio" name="q10" value="S"> Maintaining a harmonious environment</label><br>
+        <label><input type="radio" name="q10" value="C"> Delivering high-quality work</label>
+      </div>
+    </div>
+  
+    <!-- Submit Button -->
+    <button id="submit-btn" class="btn">Submit</button>
+    <div id="result"></div>
+  </main>
+  
+  <script>
+    const submitBtn = document.getElementById("submit-btn");
+    const result = document.getElementById("result");
+  
+    const profiles = {
+        D: "You are a natural decision-maker. You like taking initiative and facing challenges.",
+        I: "You are enthusiastic and enjoy motivating others. You excel at communication.",
+        S: "You are reliable and stable. You prefer a harmonious and organized environment.",
+        C: "You are analytical and precise. You enjoy working with data and facts."
+    };
+  
+    submitBtn.addEventListener("click", () => {
+        let scores = { D: 0, I: 0, S: 0, C: 0 };
+        let allAnswered = true;
+  
+        for (let i = 1; i <= 10; i++) {
+            const options = document.getElementsByName(`q${i}`);
+            let answered = false;
+  
+            for (let option of options) {
+                if (option.checked) {
+                    scores[option.value]++;
+                    answered = true;
+                    break;
+                }
+            }
+  
+            if (!answered) {
+                allAnswered = false;
+            }
+        }
+  
+        if (!allAnswered) {
+            result.textContent = "Please answer all questions before submitting.";
+            result.className = "";
+            return;
+        }
+  
+        const highestScore = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+        result.textContent = `Your dominant profile is: ${highestScore}. ${profiles[highestScore]}`;
+        result.className = `profile-${highestScore}`;
+    });
+
+
+    //navlist
+  
+    const menuIcon = document.getElementById('menu-icon');
+    const navList = document.querySelector('.navlist');
+    menuIcon.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  
+  
+  </script>
+  
+</body>
+
+</html>

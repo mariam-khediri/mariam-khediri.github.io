@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Mariem Khedhiri</title>
+  <link rel="stylesheet" href="../CSS/About.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="icon" href="../img/ME.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../CSS/Pages.css">
+  <link rel="stylesheet" href="../CSS/About.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/ME.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/ME.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/ME.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Additional styles for interests page */
+    .interests-section {
+      padding: 120px 5% 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .interests-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .interests-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+      position: relative;
+    }
+
+    .interests-header h1::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--main-color);
+      margin: 20px auto;
+      border-radius: 2px;
+    }
+
+    .interests-header p {
+      color: var(--other-color);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .interests-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .interest-card {
+      background: var(--second-bg-color);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      border-top: 4px solid var(--main-color);
+    }
+
+    .interest-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .interest-card i {
+      font-size: 2.5rem;
+      color: var(--main-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .interest-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+    }
+
+    .interest-card ul {
+      text-align: left;
+      padding-left: 1.5rem;
+    }
+
+    .interest-card li {
+      margin-bottom: 0.8rem;
+      position: relative;
+      list-style-type: none;
+    }
+
+    .interest-card li::before {
+      content: "▹";
+      position: absolute;
+      left: -1.25rem;
+      color: var(--main-color);
+    }
+
+    .gallery-section {
+      margin-top: 4rem;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--text-color);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 250px;
+      transition: all 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 1rem;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-caption {
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .interests-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+  .navlist {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: var(--second-bg-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  
+  .navlist.active {
+    right: 0;
+  }
+  
+  .navlist li {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  #menu-icon {
+    display: block;
+    z-index: 1001;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Portfoli <span>.O</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist" id="navlist">
+        <li><a href="../Html/home.html" >Home</a></li>
+        <li><a href="../Html/About.html">About</a></li>
+        <li><a href="../Html/Internships.html">Internships</a></li>
+        <li><a href="../Html/Skills.html">Skills</a></li>
+        <li><a href="../Html/Projects.html">Projects</a></li>
+        <li><a href="../Html/Social_Life.html">Social Life</a></li>
+        <li><a href="../Html/Interests.html" class="active-nav">Interests</a></li>
+    </ul>
+</header>
+<br>
+
+  <section class="interests-section">
+    <div class="interests-header">
+      <h1>My Interests & Passions</h1>
+       </div>
+
+<div class="interests-container">
+  <!-- Passions Card -->
+  <div class="interest-card">
+    <i class="ri-heart-2-fill"></i>
+    <h3>Creative Passions</h3>
+    <ul>
+      <li>Exploring diverse cultures through travel</li>
+      <li>Capturing beauty in everyday moments (photography)</li>
+      <li>Passionate about technology and innovation</li>
+      <li>Big fan of cats and animal welfare</li>
+    </ul>
+  </div>
+
+  <!-- Travel Card -->
+  <div class="interest-card">
+    <i class="ri-earth-fill"></i>
+    <h3>Travel Adventures</h3>
+    <ul>
+      <li>France: Paris</li>
+      <li>Switzerland: Basel</li>
+      <li>Luxembourg :Luxembourg</li>
+      <li>Czech Republic: Prague</li>
+      <li>Austria: Salzbourg</li>
+      <li>Germany: Chemnitz, Dresden,Munich, Leipzig, Berlin, Nuremberg, Trier, Heidelberg, Karlsruhe, Bayreuth</li>
+
+    </ul>
+  </div>
+
+  <!-- Qualities Card -->
+  <div class="interest-card">
+    <i class="ri-star-smile-fill"></i>
+    <h3>Core Qualities</h3>
+    <ul>
+      <li>Creative problem-solving</li>
+      <li>Collaborative team player</li>
+      <li>Detail-oriented and analytical</li>
+      <li>Empathetic and curious learner</li>
+    </ul>
+  </div>
+</div>
+
+<div class="gallery-section">
+  <h2>Moments That Inspire Me</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="../img/paris.jpg" alt="Paris">
+      <div class="gallery-caption">Paris – where it all began</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../img/travel.jpg" alt="Travel Nature">
+      <div class="gallery-caption">Exploring Europe’s landscapes</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../img/cat.jpg" alt="Cat Lover">
+      <div class="gallery-caption">Cat lover forever 🐾</div>
+    </div>
+  </div>
+</div>
+
+
+  </section>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menu-icon');
+  const navList = document.getElementById('navlist');
+
+  if (menuIcon && navList) {
+    menuIcon.addEventListener('click', function() {
+      this.classList.toggle('bx-x');
+      navList.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    // Ferme le menu quand un lien est cliqué
+    document.querySelectorAll('.navlist a').forEach(link => {
+      link.addEventListener('click', function() {
+        menuIcon.classList.remove('bx-x');
+        navList.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+  }
+});
+
+// Empêcher le clic droit
+document.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  
+});
+
+// Bloquer F12, Ctrl+Shift+I, Ctrl+U, etc.
+document.addEventListener('keydown', (e) => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && e.shiftKey && e.key === 'I') || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && e.key === 'J') || // Ctrl+Shift+J
+    (e.ctrlKey && e.key === 'U') // Ctrl+U (afficher le code source)
+  ) {
+    e.preventDefault();
+    
+  }
+});
+        </script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Mariam Khedhiri</title>
+  <link rel="stylesheet" href="../CSS/About.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="icon" href="../img/ME.png" type="image/x-icon">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/ME.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/ME.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/ME.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Styles spécifiques pour la page d'accueil */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 0 7%;
+      position: relative;
+      gap: 3rem;
+    }
+
+    .hero-content {
+      flex: 1;
+      max-width: 1000px;
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .profile-portrait {
+      width: 350px;
+      height: 350px;
+      border-radius: 20px;
+      object-fit: cover;
+      border: 5px solid var(--main-color);
+      box-shadow: 0 20px 50px rgba(19, 187, 255, 0.2);
+      transform: perspective(1000px) rotateY(-10deg);
+      transition: all 0.5s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .profile-portrait:hover {
+      transform: perspective(1000px) rotateY(0deg);
+      box-shadow: 0 25px 60px rgba(19, 187, 255, 0.3);
+    }
+
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 30px;
+      background: linear-gradient(45deg, var(--main-color), transparent);
+      top: -20px;
+      left: -20px;
+      z-index: 0;
+      opacity: 0.3;
+      animation: pulse 8s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.3; }
+      100% { transform: scale(1.05); opacity: 0.5; }
+    }
+
+    /* Animation du texte */
+    .hero h4 {
+      font-size: 1.6rem;
+      color: var(--main-color);
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      line-height: 1.2;
+      background: linear-gradient(to right, var(--main-color), #4facfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      color: var(--other-color);
+      animation: fadeInUp 1s ease;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+      .profile-portrait {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+      }
+      .hero-content {
+        order: 2;
+      }
+      .hero-image {
+        order: 1;
+        margin-bottom: 3rem;
+      }
+      .profile-portrait {
+        width: 250px;
+        height: 250px;
+      }
+      .hero-image::before {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero h4 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Portfoli <span>.O</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist" id="navlist">
+        <li><a href="../Html/home.html">Home</a></li>
+        <li><a href="../Html/About.html">About</a></li>
+        <li><a href="../Html/Internships.html" class="active-nav">Internships</a></li>
+        <li><a href="../Html/Skills.html">Skills</a></li>
+        <li><a href="../Html/Projects.html">Projects</a></li>
+        <li><a href="../Html/Social_Life.html">Social Life</a></li>
+        <li><a href="../Html/Interests.html">Interests</a></li>
+    </ul>
+</header>
+
+  <section id="internships">
+    <br><br><br><br>
+    <h2>My Professional Internships</h2>
+    <!-- graduation project -->
+    <div class="timeline">
+      <div class="timeline-item">
+        <img src="../../Mariem-khedhiri.portfolio1/img/tuc.jpg" alt="TU Chemnitz" class="timeline-image">
+        <div class="timeline-content">
+          <h3>February 2024 - August 2024</h3>
+          <h4>Research and Development Intern - Data Engineer</h4>
+          <p><strong>Measurement and Sensor Technology (MST), TU Chemnitz, Germany</strong></p>
+          <p>Designed an innovative EEG-based epileptic seizure classification system using compressive sensing and real-time monitoring tools.</p>
+
+          <ul class="accomplishments">
+            <li>Collected and preprocessed EEG data using MATLAB and ICA</li>
+            <li>Built a Python-based feature selection pipeline</li>
+            <li>Developed a web visualization tool with React.js and Flask</li>
+            <li>Deployed real-time model on Raspberry Pi 4</li>
+          </ul>
+          
+          
+          
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>MATLAB</span>
+            <span>EEGLAB</span>
+            <span>React.js</span>
+            <span>Flask</span>
+            <span>Raspberry Pi 4</span>
+            <span>Google Colab</span>
+          </div>
+        </div>
+      </div> 
+
+      <!-- DL internship Leoni -->
+      <div class="timeline-item">
+        <img src="../../Mariem-khedhiri.portfolio1/img/leoni.png" alt="Leoni" class="timeline-image">
+        <div class="timeline-content">
+          <h3>June 2023 - July 2023</h3>
+          <h4>Deep Learning Developer Intern</h4>
+          <p><strong>Leoni, Tunisia</strong></p>
+          <p>Built and optimized deep learning models for facial recognition and emotion detection in real-time environments.</p>
+          <ul class="accomplishments">
+            <li>Developed CNN models with TensorFlow for employee identification</li>
+            <li>Implemented real-time image processing using OpenCV</li>
+            <li>Performed testing and tuning for model performance enhancement</li>
+          </ul>
+          <div class="tech-tags">
+            <span>TensorFlow</span>
+            <span>OpenCV</span>
+            <span>Python</span>
+            <span>Jupyter</span>
+            <span>Deep Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- sparks foundation internship ML developer -->
+      <div class="timeline-item">
+        <img src="../../Mariem-khedhiri.portfolio1/img/sparks-foundation.png" alt="Sparks Foundation" class="timeline-image">
+        <div class="timeline-content">
+          <h3>June 2023 - July 2023</h3>
+          <h4>Machine Learning Developer Intern</h4>
+          <p><strong>The Sparks Foundation, Singapore (Remote)</strong></p>
+          <p>Worked on real-world datasets to build hybrid predictive models for financial and sentiment analysis.</p>
+          <ul class="accomplishments">
+            <li>Performed EDA on 'SampleSuperstore' dataset to uncover key business insights</li>
+            <li>Developed models for stock price prediction and sentiment classification</li>
+            <li>Applied both supervised and unsupervised learning techniques</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Machine Learning</span>
+            <span>Clustering</span>
+            <span>Regression</span>
+            <span>Python</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- IoT & Satellite Communication Internship -->
+      <div class="timeline-item">
+        <img src="../../Mariem-khedhiri.portfolio1/img/tunsat-1.jpg" alt="Tunsat 1 project" class="timeline-image">
+        <div class="timeline-content">
+          <h3>July 2022 - August 2022</h3>
+          <h4>IoT Developer Intern</h4>
+          <p><strong>TUNSA and ESPITA – Tunsat1 Satellite Project, Tunisia</strong></p>
+          <p>Developed robust microcontroller communication protocols and satellite system components for CubeSat missions in collaboration with JAXA and UNOOSA.</p>
+          <ul class="accomplishments">
+            <li>Created communication protocol using STM32 microcontrollers and I2C</li>
+            <li>Designed redundancy backup system for critical CubeSat subsystems</li>
+            <li>Presented technical work to JAXA and UNOOSA committees</li>
+          </ul>
+          <div class="tech-tags">
+            <span>STM32</span>
+            <span>CubeMX</span>
+            <span>I2C</span>
+            <span>Embedded Systems</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menu-icon');
+  const navList = document.getElementById('navlist');
+
+  if (menuIcon && navList) {
+    menuIcon.addEventListener('click', function() {
+      this.classList.toggle('bx-x');
+      navList.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    document.querySelectorAll('.navlist a').forEach(link => {
+      link.addEventListener('click', function() {
+        menuIcon.classList.remove('bx-x');
+        navList.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+  }
+});
+
+
+// Empêcher le clic droit
+document.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  
+});
+
+// Bloquer F12, Ctrl+Shift+I, Ctrl+U, etc.
+document.addEventListener('keydown', (e) => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && e.shiftKey && e.key === 'I') || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && e.key === 'J') || // Ctrl+Shift+J
+    (e.ctrlKey && e.key === 'U') // Ctrl+U (afficher le code source)
+  ) {
+    e.preventDefault();
+    
+  }
+});
+  </script>
+</body>
+</html>

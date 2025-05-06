@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Engagement - Scout Leader and Media Manager at Tunisian Scouts, IEEE member, event organizer">
+    <title>Portfolio | Mariem Khedhiri</title>
+    <link rel="stylesheet" href="../CSS/About.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="../img/ME.png" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/ME.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/ME.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/ME.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        .social-life {
+            padding: 120px 5% 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-life h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        .social-life h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--main-color);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .intro-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: var(--other-color);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .activity {
+            background: var(--second-bg-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--main-color);
+        }
+
+        .activity:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .activity-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .activity-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid var(--main-color);
+            box-shadow: 0 0 15px rgba(19, 187, 255, 0.2);
+        }
+
+        .activity-text h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .role-badge {
+            background: rgba(19, 187, 255, 0.1);
+            color: var(--main-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--main-color);
+        }
+
+        .activity-text p {
+            color: var(--other-color);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .activity-content {
+                flex-direction: column;
+            }
+
+            .activity-image {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-life {
+                padding: 100px 3% 60px;
+            }
+
+            .activity {
+                padding: 1.5rem;
+            }
+        }
+
+        .achievement-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: rgba(19, 187, 255, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid var(--main-color);
+}
+
+.achievement-highlight i {
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.achievement-highlight span {
+    font-size: 0.95rem;
+    color: var(--other-color);
+}
+
+.achievement-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: rgba(19, 187, 255, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid var(--main-color);
+}
+
+.achievement-highlight i {
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.achievement-highlight span {
+    font-size: 0.95rem;
+    color: var(--other-color);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfoli <span>.O</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist" id="navlist">
+            <li><a href="../Html/home.html">Home</a></li>
+            <li><a href="../Html/About.html">About</a></li>
+            <li><a href="../Html/Internships.html">Internships</a></li>
+            <li><a href="../Html/Skills.html">Skills</a></li>
+            <li><a href="../Html/Projects.html">Projects</a></li>
+            <li><a href="../Html/Social_Life.html" class="active-nav" >Social Life</a></li>
+            <li><a href="../Html/Interests.html">Interests</a></li>
+        </ul>
+    </header>
+    <br>
+
+
+    <section class="social-life">
+        <div class="container">
+          <h1>Social Life</h1>
+      
+          <!-- ENET'Com Aeromodeling Club -->
+          <div class="activity">
+            <div class="activity-content">
+              <img src="../img/aeromodeling-club.jpg" alt="Aeromodeling Club" class="activity-image">
+              <div class="activity-text">
+                <h2>
+                  <i class='bx bx-plane-alt'></i> Club Aeromodelisme ENET'Com 
+                  <span class="role-badge">HR Manager</span>
+                </h2>
+                <p>As HR Manager, I coordinated member engagement and supported the club’s strategic growth. I also helped organize and represent the club during national-level competitions and events.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- ENET Aero Cup -->
+          <div class="activity">
+            <div class="activity-content">
+              <img src="../img/enet-aero-cup.jpg" alt="ENET Aero Cup" class="activity-image">
+              <div class="activity-text">
+                <h2>
+                  <i class='bx bx-rocket'></i> ENET Aero Cup Co-Founder
+                  <span class="role-badge">Event Lead</span>
+                </h2>
+                <p>Co-led the launch of the first national aeromodeling competition in southern Tunisia, bringing together university teams from across the country and showcasing engineering creativity.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- TUNSA Club -->
+          <div class="activity">
+            <div class="activity-content">
+              <img src="../img/tunsa-club.jpg" alt="TUNSA Club" class="activity-image">
+              <div class="activity-text">
+                <h2>
+                  <i class='bx bx-bulb'></i> TUNSA ENET'Com
+                  <span class="role-badge">Founder</span>
+                </h2>
+                <p>Founded a student club focused on sustainable tech, aeronautics, and STEM advocacy. Led awareness events and helped expand the club's regional reach.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Hackathon 2023 -->
+          <div class="activity">
+            <div class="activity-content">
+              <img src="../img/hackathon23.jpg" alt="Hackathon 2023" class="activity-image">
+              <div class="activity-text">
+                <h2><i class='bx bx-code-alt'></i> Hackathon’23 – Digital Research Center of Sfax</h2>
+                <p>Won <strong>2nd Prize</strong> at a national hackathon focused on smart automotive solutions, where I built an AI-based system for vehicle data analysis and real-time insights.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- AeroSpina Competition -->
+          <div class="activity">
+            <div class="activity-content">
+              <img src="../img/aerospina.jpg" alt="AeroSpina Competition" class="activity-image">
+              <div class="activity-text">
+                <h2><i class='bx bx-trophy'></i> AeroSpina ENIM 2023</h2>
+                <p>Awarded <strong>2nd place</strong> in a national aeromodeling competition for innovative drone design and flight performance, representing ENET'Com against top engineering schools in Tunisia.</p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menu-icon');
+  const navList = document.getElementById('navlist');
+
+  if (menuIcon && navList) {
+    menuIcon.addEventListener('click', function() {
+      this.classList.toggle('bx-x');
+      navList.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    document.querySelectorAll('.navlist a').forEach(link => {
+      link.addEventListener('click', function() {
+        menuIcon.classList.remove('bx-x');
+        navList.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+  }
+});
+// Empêcher le clic droit
+document.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  
+});
+
+// Bloquer F12, Ctrl+Shift+I, Ctrl+U, etc.
+document.addEventListener('keydown', (e) => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && e.shiftKey && e.key === 'I') || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && e.key === 'J') || // Ctrl+Shift+J
+    (e.ctrlKey && e.key === 'U') // Ctrl+U (afficher le code source)
+  ) {
+    e.preventDefault();
+    
+  }
+});
+    </script>
+</body>
+</html>
