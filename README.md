@@ -64,9 +64,9 @@ The website includes an interactive gallery showing meaningful moments from my a
 
 Feel free to connect with me!
 
-- 📧 Email: [your-email@example.com](mailto:mariamkhediri1@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/mariam-khedhiri](https://www.linkedin.com/in/mariem-khediri/)  
-- 🧠 GitHub: [github.com/mariam-khedhiri](https://github.com/mariam-khediri)
+- 📧 Email: [mariamkhediri1@gmail.com](mailto:mariamkhediri1@gmail.com)  
+- 💼 LinkedIn: [https://www.linkedin.com/in/mariem-khediri/](https://www.linkedin.com/in/mariem-khediri/)  
+- 🧠 GitHub: [https://github.com/mariam-khediri](https://github.com/mariam-khediri)
 
 ---
 
